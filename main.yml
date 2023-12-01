@@ -25,7 +25,7 @@
 
   tasks:
     - name: Make sure the latest version of Lynis installed
-      apt:
+      package:
         name: lynis
         state: latest
 
