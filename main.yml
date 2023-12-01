@@ -31,8 +31,9 @@
 
     - name: Perform Lynis scan
       command: lynis audit system
+      notify: Fetch Lynis logs
 
-    - name: Send Lynis logs back
+    - name: Fetch Lynis logs
       fetch:
         src: /var/log/lynis.log
         dest: "lynis-{{ ansible_host }}.log"
