@@ -17,12 +17,17 @@
   hosts: all
   become: true
 
+  pre_tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: true
+        cache_valid_time: 3600
+
   tasks:
-    - name: Update apt cache and make sure the latest available version of Lynis is installed
+    - name: Make sure the latest version of Lynis installed
       apt:
         name: lynis
         state: latest
-        update_cache: true
 
     - name: Perform Lynis scan
       command: lynis audit system
