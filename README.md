@@ -2,7 +2,7 @@
 This ansible playbook helps to perform lynis audit on multiple machines at once.
 
 
-# Table of Contents
+## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 
