@@ -1,0 +1,8 @@
+[servers]
+example.server.domain
+example.server.ip
+
+[servers:vars]
+ansible_user=your-username
+ansible_private_key_file=~/.ssh/your-private-key
+
