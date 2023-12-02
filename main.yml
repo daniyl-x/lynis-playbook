@@ -31,7 +31,6 @@
 
     - name: Perform Lynis scan
       command: lynis audit system
-      notify: Fetch Lynis logs
 
     - name: Fetch Lynis logs
       fetch:
