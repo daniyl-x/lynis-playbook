@@ -15,6 +15,7 @@ This ansible playbook helps to perform lynis audit on multiple machines at once.
 ## Usage
 1. Switch current directory to the cloned repo
 2. Replace example domains with your server's domain/IP, replace username and path to your SSH key in the [inventory](./inventory) file
+2. Use template [inventory](./inventory) file or make your own
 3. To run the playbook, execute next ansible command in your shell:
 ```bash
 ansible-playbook main.yml
