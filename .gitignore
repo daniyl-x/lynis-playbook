@@ -1,3 +1,8 @@
+# Ansible
 inventory
 inventory.yml
 inventory.yaml
+
+# Lynis
+lynis-*.log
+
